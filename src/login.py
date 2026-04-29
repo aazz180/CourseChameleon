@@ -399,7 +399,7 @@ class User():
         email_api_key = environ.get("EMAIL_API_KEY", "")
         email_sender_key = environ.get("EMAIL_SECRET_KEY", "")
         email_sender_address = environ.get("EMAIL_SENDER_ADDRESS", "") # we parse the email sender information from the .env file
-        reset_link = "http://127.0.0.1:5500/forgot_password.html?reset_token=" + reset_url_token
+        reset_link = "https://coursechameleon.netlify.app/forgot_password.html?reset_token=" + reset_url_token
 
         send_payload = {
             "Messages": [
