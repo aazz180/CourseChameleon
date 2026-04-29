@@ -124,7 +124,7 @@ if debug:  # if in debug mode, we allow more origins for CORS coming from Live S
     ]
 else:
     origins = [
-        "https://coursechameleon.netlify.app/"
+        "https://coursechameleon.netlify.app"
     ]
 
 app.add_middleware(
